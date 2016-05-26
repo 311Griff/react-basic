@@ -5,7 +5,6 @@ import React, {Component} from 'react'; // same as const Component = React.Compo
 /*const SearchBar = () => {
     return <input />;
 };*/
-
 //create event handler, pass handler to element to monitor
 
 /* method to check if input is in the search bar, this is the way to write it as a separate event, but you can also include the code inside
@@ -46,5 +45,4 @@ class SearchBar extends Component {
 }
 
 
-
-export default SearchBar; //exports SearchBar to be used by other files
+export default SearchBar; //exports SearchBar class and its constructor to be used by other files
