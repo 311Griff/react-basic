@@ -14,15 +14,7 @@ import React, {Component} from 'react'; // same as const Component = React.Compo
  console.log(event.target.value); //getting the changes in the input field and throwing it on the console
  }*/
 
-
-
-//es6 class based component...
-//define new class and give it access to all of added functionality in react.Component
-//defines method on the class  ... ALL React classes have a render method
-//return JSX
-//all Class based functions have constructors
-//first and only function called automatically when the class is called, reserved for doing setup in our class, such as initializing
-//variables and state
+//state: whenever we change our state, the component instantly re-renders along with any children contained in the component.
 
 class SearchBar extends Component {
     constructor(props) {
@@ -34,12 +26,18 @@ class SearchBar extends Component {
 //pass a condition to the original state object, use setState
     render() {
         return (
-            <div>
+            <div className = "search-bar">
+                <label htmlFor="input">Search: </label>
                 <input
                     value = {this.state.term}
-                    onChange = {event =>  this.setState({ term: event.target.value })}/>
+                    onChange = {event =>  this.onInputChange(event.target.value)}/>
             </div>
          );
+    }
+
+    onInputChange(term) {
+        this.setState({term});
+        this.props.onSearchTermChange(term);
     }
 
 }
