@@ -3,10 +3,9 @@ module.exports = {
     './src/index.js'
   ],
   output: {
-    path: __dirname,
-    publicPath: '/',
-    filename: 'bundle.js'
-  },
+    path: __dirname + '/public',
+    filename: './build/bundle.js'},
+
   module: {
     loaders: [{
       exclude: /node_modules/,

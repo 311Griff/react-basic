@@ -8,7 +8,7 @@ import VideoDetail from './components/video_detail';
 const API_KEY = 'AIzaSyCIfM31_jqKfzx50HuN7j9_6TuggCJYYG8';
 
 //using the youtube search class, send an object of parameters and then a callback function
-YTSearch({key: API_KEY, term: 'surfboards'}, function(data){
+YTSearch({key: API_KEY, term: 'savvy nomad'}, function(data){
 });
 
 //create new component that should produce some html.
@@ -22,7 +22,7 @@ class App extends Component {
             selectedVideo: null
         };
 
-        this.videoSearch('surfboards');
+        this.videoSearch('savvy nomad');
     }
 
     videoSearch(term) {

@@ -1,5 +1,16 @@
+body{
+ background: #67989A linear-gradient(to top, #67989A 30%, #003133 50%, #0D4A4D 80%, #417D80 100%);
+}
+
+
+.container {
+    background: rgba(242,242,242, .8);
+    border-radius: 5px;
+
+}
 .search-bar {
     margin: 20px;
+    padding-top: 20px;
     text-align: center;
 
 }
@@ -32,3 +43,4 @@
 .list-group-item:hover {
     background-color: #eee;
 }
+

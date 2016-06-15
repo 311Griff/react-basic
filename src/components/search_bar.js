@@ -24,6 +24,7 @@ class SearchBar extends Component {
     }
 
 //pass a condition to the original state object, use setState
+
     render() {
         return (
             <div className = "search-bar">
